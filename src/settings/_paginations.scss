@@ -1,0 +1,27 @@
+.paginations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 50px 0px 0px;
+
+    .pagination {
+        color: #fff;
+        font-family: Inter, sans-serif;
+        font-size: 14px;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--dark);
+        opacity: 0.5;
+        border: none;
+        cursor: pointer;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+}

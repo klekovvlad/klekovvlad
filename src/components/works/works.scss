@@ -1,0 +1,26 @@
+.workspage {
+    .categories {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 16px;
+        padding: 30px 0px 50px;
+    }
+
+    .category {
+        cursor: pointer;
+        font-family: Inter, sans-serif;
+        border: none;
+        opacity: 0.5;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+
+    .works-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 24px;
+    }
+}

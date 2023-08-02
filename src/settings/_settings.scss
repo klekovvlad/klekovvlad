@@ -1,0 +1,11 @@
+body {
+    @include font(400);
+    background: var(--body);
+    color: var(--text);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 60px 25px;
+}

@@ -1,0 +1,119 @@
+.box {
+    color: var(--gray);
+    padding: 24px;
+    border-radius: 30px;
+    background: rgba($color: #fff, $alpha: 0.05);
+
+    &-wide {
+        grid-column-start: span 2;
+
+        @media (max-width: 767px) {
+            grid-column-start: 1;
+        }
+
+        .box {
+            &-content {
+                flex-direction: row;
+
+                &-imgs {
+                    flex: 0 0 200px;
+                    img {
+                        width: 200px;
+                        height: 200px;
+                        object-fit: cover;
+                        object-position: center;
+                        border-radius: 30px;
+                    }
+                }
+
+                &-text {
+                    margin: 0;
+                    padding: 20px 0px 0px;
+                }
+            }
+
+            &-title {
+                font-size: 36px;
+                margin: 3px 0px 12px;
+            }
+
+            &-subtitle {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 28px;
+
+        &-text {
+            margin-top: auto;
+        }
+
+        &-inner {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 20px;
+            padding: 12px;
+            border-radius: 30px;
+            background: rgba($color: #fff, $alpha: 0.02);
+    
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 82px;
+                height: 82px;
+                border-radius: 50%;
+                border: 1px solid rgba(255,255,255,0.1);
+
+                img {
+                    width: 40%;
+                    height: 40%;
+                    object-position: center;
+                    object-fit: contain;
+                    filter: grayscale(1);
+                }
+            }
+        }
+    }
+
+    &-title {
+        color: #fff;
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 700;
+        margin: 12px 0px 0px;
+    }
+
+    &-subtitle {
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+
+    &-inner {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 12px;
+        text-align: center;
+        font-size: 12px;
+        text-transform: uppercase;
+        padding: 24px 12px;
+
+        .num {
+            color: #fff;
+            font-size: 28px;
+            font-weight: 700;
+        }
+    }
+}
